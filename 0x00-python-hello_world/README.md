@@ -71,7 +71,7 @@ word_first_3 should contain the first 3 letters of the variable word
 word_last_2 should contain the last 2 letters of the variable word
 middle_word should contain the value of the variable word without the first and last letters
 
-8. Create a new sentence
+# 8. Create a new sentence
 
 mandatory
 Complete this source code to print object-oriented programming with Python, followed by a new line.
@@ -80,39 +80,24 @@ You are not allowed to use any loops or conditional statements
 Your program should be exactly 5 lines long
 You are not allowed to create new variables
 You are not allowed to use string literals
+
 # 9. Easter Egg
 
 mandatory
 Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
-10. Linked list cycle
+
+# 10. Linked list cycle
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
-
 Technical interview preparation:
-
-
-
 You are not allowed to google anything
-
 Whiteboard first
-
 This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
-
 Write a function in C that checks if a singly linked list has a cycle in it.
-
-
-
 Prototype: int check_cycle(listint_t *list);
-
 Return: 0 if there is no cycle, 1 if there is a cycle
-
 Requirements:
-
-
-
 Only these functions are allowed: write, printf, putchar, puts, malloc, free
 
 # 11. Hello, write
@@ -127,15 +112,8 @@ Your script should exit with the status code 1
 
 #advanced
 Write a script that compiles a Python script file.
-
-
-
 The Python file name will be stored in the environment variable $PYFILE
-
-
-
 The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
-
 # 13. ByteCode -> Python #1
 
 #advanced
