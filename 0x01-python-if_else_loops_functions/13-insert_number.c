@@ -2,7 +2,7 @@
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *p = *head;
-	listint_t *t;
+	listint_t *t = *head;
 	listint_t *newnode;
 
 	newnode = malloc(sizeof(listint_t));
