@@ -8,6 +8,7 @@ listint_t *insert_node(listint_t **head, int number)
 	newnode = malloc(sizeof(listint_t));
 	if (p == NULL || newnode == NULL)
 		return (NULL);
+	newnode->n = number
 	while(p->n < number && p != NULL)
 	{
 		if (number == p->n)
