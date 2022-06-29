@@ -10,6 +10,8 @@ listint_t *insert_node(listint_t **head, int number)
 		return (NULL);
 	while(p->n < number && p != NULL)
 	{
+		if (n == p->n)
+			return (p);
 		t = p;
 		p = p->next;
 	}
