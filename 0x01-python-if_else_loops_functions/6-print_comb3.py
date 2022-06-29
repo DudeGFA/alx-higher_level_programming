@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 a=0
 b=0
 for i in range(1, 80):
