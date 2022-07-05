@@ -13,8 +13,10 @@ int is_palindrome(listint_t **head)
         return (1);
     child = *head;
     for(i = 0; child != NULL; i++)
+    {
         arr_of_n[i] = child->n;
         child = child->next;
+    }
     for(k = 0, i--; k < (j / 2); k++, i--)
         if (arr_of_n[k] != arr_of_n[i])
             return (0);
