@@ -1,5 +1,11 @@
 #include "lists.h"
 #include <stdlib.h>
+/**
+ * is_palindrome - checks if a singly
+ * linked list is a palindrome
+ * @head: double pointer to singly linked list
+ * Return: 1 or 0 
+ */
 int is_palindrome(listint_t **head)
 {
     listint_t *child = *head;
