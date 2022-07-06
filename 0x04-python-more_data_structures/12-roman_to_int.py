@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
     i = 0
     roman_dict = \
         {"M": 1000, "D": 500, "C": 100, "L": 50, "X": 10, "V": 5, "I": 1}
-    roman_dict_9 = {"IX": 9, "XC": 90, "CM": 900}
+    roman_dict_9 = {"IX": 9, "IV": 4, "XL": 40, "CD": 400, "XC": 90, "CM": 900}
     while i < len(roman_string):
         if roman_string[i:i+2] in roman_dict_9:
             sum += roman_dict_9[roman_string[i:i+2]]
