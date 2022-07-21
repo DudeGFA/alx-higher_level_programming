@@ -8,6 +8,7 @@ class Square:
         """initialize a new Square.
         Args:
             size (int): size of square.
+            position (int, int): position of square.
         """
         if type(size) is not int:
             raise TypeError("size must be an integer")
@@ -64,4 +65,4 @@ class Square:
         for num in value:
             if num is not int or num < 0:
                 raise TypeError(ERR)
-        __position = value
+        self.__position = value
