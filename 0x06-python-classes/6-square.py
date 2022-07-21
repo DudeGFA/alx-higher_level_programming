@@ -14,8 +14,8 @@ class Square:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """returns area of a square"""
@@ -43,12 +43,12 @@ class Square:
         if self.__size == 0:
             print("")
             return
-        for i in range(self.__position[1]):
+        for f in range(self.__position[1]):
             print("")
         for i in range(self.__size):
-            for i in range(self.__position[0]):
+            for j in range(self.__position[0]):
                 print(" ", end="")
-            for i in range(self.__size):
+            for k in range(self.__size):
                 print("#", end="")
             print("")
 
