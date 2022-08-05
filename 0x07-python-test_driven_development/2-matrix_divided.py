@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
     Returns:
         a new matrix with all elements divided by div.
     """
-    if not isinstance(div, int) or not isinstance(div, float):
+    if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError('div must be a number')
     if div == 0:
         raise ZeroDivisionError('division by zero')
@@ -25,6 +25,6 @@ def matrix_divided(matrix, div):
         if len(row) != len(matrix[0]):
             raise TypeError('Each row of the matrix must have the same size')
         for no in row:
-            if not isinstance(no, int) or not isinstance(no, float):
+            if not isinstance(no, int) and not isinstance(no, float):
                 raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
     return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
