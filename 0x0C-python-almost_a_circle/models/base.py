@@ -99,7 +99,10 @@ class Base:
             if list_objs is None or list_objs == []:
                 csvfile.write("[]")
             else:
-                fieldnames = ["id", "size", "x", "y"]
+                if cls.__name__ == "Rectangle"
+                    fieldnames = ["id", "size", "x", "y"]
+                else:
+                    fieldnames = ["id", "size"]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             for obj in list_objs:
                 writer.writerow(obj.to_dictionary())
