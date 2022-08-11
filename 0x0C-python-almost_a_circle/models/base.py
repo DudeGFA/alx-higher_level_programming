@@ -102,7 +102,7 @@ class Base:
                 if cls.__name__ == "Rectangle":
                     fieldnames = ["id", "size", "x", "y"]
                 else:
-                    fieldnames = ["id", "size"]
+                    fieldnames = ["id", "size", "x", "y"]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             for obj in list_objs:
                 writer.writerow(obj.to_dictionary())
