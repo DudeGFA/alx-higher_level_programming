@@ -99,7 +99,7 @@ class Base:
             if list_objs is None or list_objs == []:
                 csvfile.write("[]")
             else:
-                if cls.__name__ == "Rectangle"
+                if cls.__name__ == "Rectangle":
                     fieldnames = ["id", "size", "x", "y"]
                 else:
                     fieldnames = ["id", "size"]
