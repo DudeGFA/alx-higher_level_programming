@@ -88,7 +88,7 @@ class Base:
             return []
 
     @classmethod
-    def save_to_file(cls, list_objs):
+    def save_to_file_csv(cls, list_objs):
         """Write the CSV serialization
             of a list of objects to a file.
             Args:
