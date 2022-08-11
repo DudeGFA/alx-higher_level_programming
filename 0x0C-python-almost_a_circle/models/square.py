@@ -23,6 +23,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        """setter of square size"""
         self.width = value
         self.height = value
 
@@ -71,4 +72,5 @@ class Square(Rectangle):
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, sw)
 
     def to_dictionary(self):
+        """returns dictionary representation of a square instance"""
         return {'id': self.id, 'x': self.x, 'size': 10, 'y': self.y}
