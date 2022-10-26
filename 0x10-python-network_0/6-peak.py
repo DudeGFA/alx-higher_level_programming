@@ -2,21 +2,21 @@
 """ Contains function findPeak"""
 
 
-def findPeak(arr):
-    """ finds a peak element in a list"""
+def find_peak(list_of_integers):
+    """Finds a peak element in a list"""
 
-    n = len(arr)
+    n = len(list_of_integers)
     if (n == 1):
         return 0
-    if (arr[0] >= arr[1]):
+    if (list_of_integers[0] >= list_of_integers[1]):
         return 0
-    if (arr[n - 1] >= arr[n - 2]):
+    if (list_of_integers[n - 1] >= list_of_integers[n - 2]):
         return n - 1
 
     i = n - 1
     while i > 0:
-        if (arr[i] >= arr[i - 1] and arr[i] >= arr[i + 1]):
+        if (list_of_integers[i] >= list_of_integers[i - 1] and list_of_integers[i] >= list_of_integers[i + 1]):
             return i
-        elif (arr[i] > arr[i - 1]):
+        elif (list_of_integers[i] > list_of_integers[i - 1]):
             i -= 1
         i -= 1
