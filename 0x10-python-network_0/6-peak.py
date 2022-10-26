@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-# Contains function findPeak
+""" Contains function findPeak"""
+
+
 def findPeak(arr) :
-# finds a peak element in a list
+""" finds a peak element in a list"""
     n = len(arr)
     if (n == 1) :
       return 0
